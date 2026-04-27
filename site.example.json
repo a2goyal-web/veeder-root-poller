@@ -1,0 +1,44 @@
+{
+    "help": "Fill in values below for this site. Then run: sudo tgm check",
+
+    "site": {
+        "name": "mrb_XXXXXXXXXXXX",
+        "notes": ""
+    },
+
+    "gauge": {
+        "mode": "serial",
+
+        "serial": {
+            "device":    "/dev/ttyUSB0",
+            "baudrate":  9600,
+            "parity":    "odd",
+            "databits":  7,
+            "stopbits":  1
+        },
+
+        "network": {
+            "address": "192.168.1.198",
+            "port":    10001
+        }
+    },
+
+    "hub": {
+        "address": "3.134.10.80",
+        "port":    5000
+    },
+
+    "schedule": {
+        "interval_sec": 3600,
+        "pause_between_cmds_sec": 3,
+        "retry_attempts": 2
+    },
+
+    "bridge": {
+        "timeout_sec": 120
+    },
+
+    "ondemand": {
+        "http_port": 5050
+    }
+}
